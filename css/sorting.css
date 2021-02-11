@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    padding-bottom: 1%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hp {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+#array {
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 520px;
+}
+
+.block {
+    bottom: 0;
+    background-color: blue;
+    display: inline-block;
+    border: solid;
+    border-color: white;
+    border-width: thin;
+    transition: 0.2s all ease;
+}
+
+.buttons {
+    text-align: center;
+}

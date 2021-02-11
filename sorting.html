@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sorting.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Sorting Algorithms Visualizer</h2>
+        <p class="hp">
+            <select name="SortingTechniques" class="sorttech" id="selectsort">
+                <option value="B">Bubble Sort</option>
+                <option value="I">Insertion Sort</option>
+                <option value="S">Selection Sort</option>
+                <option value="M">Merge Sort</option>
+                <option value="Q">Quick Sort</option>
+            </select>
+            <br>
+            <br>
+        </p class="hp">
+        <p class="hp">
+            <span>Numbers</span><br>
+            <input type="range" min="20" max="200" name="Number" value="N" id="rangechange" onchange="updateInput(this.value);generate()"><br>
+            <span id="display">100</span>
+        </p>
+        <p class="hp">
+            <span>Transition Speed</span><br>
+            <input type="range" min="1" max="4" name="Number" value="N" id="speed" onchange="updateSpeed(this.value)"><br>
+            <span id="displayspeed">2x</span>
+        </p>
+        <p class="hp">
+            <button type="button" class="btn btn-dark" name="button" id="generator" onclick="generate()">Change Array</button><br><br>
+        </p>
+    </div>
+    <div class="maincontent">
+        <div id="array">
+
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="btn btn" tabindex="-1" role="button">Back</a>
+            <button type="button" class="btn btn-dark" name="button" id="start" onclick="start()">Start</button>
+        </div>
+    </div>
+
+    <script src="script/sorting.js" charset="utf-8"></script>
+</body>
+
+</html>
